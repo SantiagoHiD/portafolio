@@ -4,8 +4,36 @@
     <title>Encriptador de texto</title>
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <script type="text/javascript" src="scrip.js"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.5/iconify-icon.min.js"></script>
 </head>
 <body>
-    <h1>titulo</h1>
+    <header class="header">
+        <img class="logoAlura" src="IMG/Logo.png" alt="Logo de alura">
+    </header>
+    <main class="main">
+        <section class="textoEncriptado">
+            <label for="areaTextoE"></label>
+            <textarea id="areaTextoE" class="textMensaje" required placeholder="Ingrese el texto aqui"></textarea>
+            
+
+            <p class="aviso"><iconify-icon icon="bi:exclamation-circle-fill"></iconify-icon> Solo letras minúsculas y sin acentos</p>
+        </section>
+        <section class="botonesED">
+            <input type="submit" value="Encriptar" class="botonE">
+
+            <input type="submit" value="Desencriptar" class="botonD">
+        </section>
+    </main>
+    <aside class="aside">
+        <section class="textoDesencriptado">
+            <label for="areaTextoD"></label>
+        <textarea id="areaTextoD" class="textMensaje" required></textarea>
+        </section>
+        <section class="botonCopiar">
+            <input type="submit" value="Copiar" class="botonC">
+        </section>
+    </aside>
 </body>
 </html>

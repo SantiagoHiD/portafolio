@@ -1,0 +1,149 @@
+body{
+    background-color: #D8DFE8;
+}
+
+/**HEADER*/
+
+.header{
+    display: inline-block;
+    width: 70%;
+    height: 100px;
+}
+
+.logoAlura{
+    width: 120px;
+    height: 48px;
+    margin-left: 40px;
+    margin-top: 40px;
+}
+
+/**MAIN*/
+
+.main{
+
+    width: 70%;
+    height: 850px;
+    display: inline-block;
+    text-align: center;
+    
+}
+
+#areaTextoE{
+
+    margin-top: 50px;
+    background-color: #D8DFE8;
+    width: 70%;
+    height: 70%;
+    resize: none;
+    border: none;
+
+    color: #0A3871;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+
+
+}
+
+#areaTextoE::placeholder { 
+    color: #0A3871; 
+}
+
+/**MAIN-BOTONES*/
+
+.botonE{
+    color: white;
+    background-color:#0A3871;
+    border-radius: 24px;
+    width: 25%;
+    height: 67px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    margin: 20px;
+
+    
+}
+
+.botonD{
+    color: #0A3871;
+    background-color: #D8DFE8;
+    border-radius: 24px;
+    width: 25%;
+    height: 67px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    margin: 20px;
+}
+
+/**MAIN-TEXTO DE AVISO*/
+
+.aviso{
+    text-align:left;
+    margin-left: 23%;
+    font-family: 'Inter';
+    font-style: normal;
+    font-size: 12px;
+    color: #495057;
+    opacity: 0.8;
+    margin-top: 20px;
+}
+
+
+/**ASIDE*/
+
+.aside{
+    position: absolute;
+    background-color: #FFFFFF;
+    width: 24%;
+    height: 850px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 32px;
+    margin-top: -50px;
+}
+
+#areaTextoD{
+
+    margin-top: 50px;
+    background-color: white;
+    width: 70%;
+    height: 80%;
+    resize: none;
+    border: none;
+
+    color: #495057;;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 150%;
+
+
+}
+
+/**ASIDE-BOTON*/
+
+.botonC{
+    color: #0A3871;
+    background-color: white;
+    border-radius: 24px;
+    width: 72%;
+    height: 67px;
+    margin-top: 20px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+}
