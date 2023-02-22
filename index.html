@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -5,7 +6,7 @@
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/reset.css">
-    <script type="text/javascript" src="scrip.js"></script>
+    <script type="text/javascript" src="JavaScript/script.js"></script>
     <script src="https://code.iconify.design/iconify-icon/1.0.5/iconify-icon.min.js"></script>
 </head>
 <body>
@@ -16,23 +17,27 @@
         <section class="textoEncriptado">
             <label for="areaTextoE"></label>
             <textarea id="areaTextoE" class="textMensaje" required placeholder="Ingrese el texto aqui"></textarea>
-            
 
             <p class="aviso"><iconify-icon icon="bi:exclamation-circle-fill"></iconify-icon> Solo letras minúsculas y sin acentos</p>
         </section>
         <section class="botonesED">
-            <input type="submit" value="Encriptar" class="botonE">
+            <input type="button" value="Encriptar" id="botonE">
 
-            <input type="submit" value="Desencriptar" class="botonD">
+            <input type="submit" value="Desencriptar" id="botonD">
         </section>
     </main>
     <aside class="aside">
+        <section class="imagenMuñeca">
+            <img id="imgMuñeca" src="IMG/Muñeco.png">
+            <h2 id="mensajeEspera">Ningun mensaje fue encontrado</h2>
+            <p id="mensajePeticion">Ingrese el texto que desee encriptar o desencriptar.</p>
+        </section>
         <section class="textoDesencriptado">
             <label for="areaTextoD"></label>
         <textarea id="areaTextoD" class="textMensaje" required></textarea>
         </section>
         <section class="botonCopiar">
-            <input type="submit" value="Copiar" class="botonC">
+            <input type="submit" value="Copiar" id="botonC">
         </section>
     </aside>
 </body>
