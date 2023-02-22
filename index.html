@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Encriptador de texto</title>
@@ -9,16 +10,17 @@
     <script type="text/javascript" src="JavaScript/script.js"></script>
     <script src="https://code.iconify.design/iconify-icon/1.0.5/iconify-icon.min.js"></script>
 </head>
+
 <body>
     <header class="header">
         <img class="logoAlura" src="IMG/Logo.png" alt="Logo de alura">
     </header>
     <main class="main">
         <section class="textoEncriptado">
-            <label for="areaTextoE"></label>
-            <textarea id="areaTextoE" class="textMensaje" required placeholder="Ingrese el texto aqui"></textarea>
+            <textarea id="areaTextoE" class="textMensaje" placeholder="Ingrese el texto aqui"></textarea>
 
-            <p class="aviso"><iconify-icon icon="bi:exclamation-circle-fill"></iconify-icon> Solo letras minúsculas y sin acentos</p>
+            <p class="aviso"><iconify-icon icon="bi:exclamation-circle-fill"></iconify-icon> Solo letras minúsculas y
+                sin acentos</p>
         </section>
         <section class="botonesED">
             <input type="button" value="Encriptar" id="botonE">
@@ -33,12 +35,12 @@
             <p id="mensajePeticion">Ingrese el texto que desee encriptar o desencriptar.</p>
         </section>
         <section class="textoDesencriptado">
-            <label for="areaTextoD"></label>
-        <textarea id="areaTextoD" class="textMensaje" required></textarea>
+            <textarea id="areaTextoD" class="textMensaje"></textarea>
         </section>
         <section class="botonCopiar">
             <input type="submit" value="Copiar" id="botonC">
         </section>
     </aside>
 </body>
+
 </html>
