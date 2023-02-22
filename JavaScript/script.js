@@ -2,31 +2,15 @@
 
 
 window.onload = function () {
-    document.getElementById("botonE").addEventListener("click", eliminarIMG);
-    document.getElementById("botonD").addEventListener("click", eliminarIMG);
+  
+
+    document.getElementById("botonE").addEventListener("click", copiarTxto);
     /**document.getElementById("botonE").onclick = eliminarIMG;*/
 }
 
-/** FUNCION CORRECTA
-function eliminarIMG() {
+function copiarTxto() {
 
-    if (document.getElementById("areaTextoD").value.length == 0) {
-
-        alert("No ha digitado ninguna letra");
-
-    }
-    else {
-        document.getElementById("imgMuñeca").style.display = "none";
-        document.getElementById("mensajeEspera").style.display = "none";
-        document.getElementById("mensajePeticion").style.display = "none";
-        document.getElementById("areaTextoD").style.display = "block";
-        document.getElementById("botonC").style.display = "block";
-    }
-
-}
-*/
-
-function eliminarIMG() {
+    if (document.getElementById("areaTextoE").value.length != 0) {
 
         document.getElementById("imgMuñeca").style.display = "none";
         document.getElementById("mensajeEspera").style.display = "none";
@@ -34,4 +18,10 @@ function eliminarIMG() {
         document.getElementById("areaTextoD").style.display = "block";
         document.getElementById("botonC").style.display = "block";
 
+        var contraseña = document.getElementById("areaTextoE").value; 
+        document.getElementById("areaTextoD").value = contraseña;
+    }
+    else{
+        alert("Ningun mensaje fue encontrado");
+    }
 }
